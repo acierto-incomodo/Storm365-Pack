@@ -1,0 +1,23 @@
+{
+  "name": "storm365-pack",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "workspaces": [
+    "packages/git-desktop",
+    "packages/pdf-viewer",
+    "packages/presentations",
+    "packages/writer"
+  ],
+  "scripts": {
+    "start:pdf-viewer": "npm start --workspace=pdf-viewer",
+    "start:presentations": "npm start --workspace=presentations",
+    "start:writer": "npm start --workspace=writer"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^45.2.3",
+    "electron-builder": "^26.18.0"
+  }
+}
